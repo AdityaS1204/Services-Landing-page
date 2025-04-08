@@ -8,6 +8,14 @@ const Navbar = () => {
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen)
     }
+    
+  const whatsappRedirect = () => {
+    const phone = "9595843562"
+    const msg = "hey, there i want to know more about this service."
+    const encodedUrlComponent = encodeURIComponent(msg);
+    const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`
+    window.open(url, "_blank");
+  }
 
     return (
 
@@ -21,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 
-             <button className='hidden lg:flex p-2 border-amber-100 bg-yellow-400 rounded-lg text-black font-Roboto hover:bg-amber-300 cursor-pointer'>Book service</button> 
+             <button className='hidden lg:flex p-2 border-amber-100 bg-yellow-400 rounded-lg text-black font-Roboto hover:bg-amber-300 cursor-pointer' onClick={whatsappRedirect}>Book service</button> 
                 <button onClick={toggleNavbar} className="lg:hidden">
                     {!mobileDrawerOpen ? <Menu /> : <X />}
                 </button>
@@ -32,7 +40,7 @@ const Navbar = () => {
                          <li className='py-2 hover:text-black'>Services</li>
                          <li className='py-2 hover:text-black'>About us</li>
                      </ul>
-                 <button className='p-2 my-4 border-amber-100 bg-yellow-300 cursor-pointer hover:bg-amber-900 rounded-lg text-slate-900 font-Roboto '>Book service</button>
+                 <button className='p-2 my-4 border-amber-100 bg-yellow-300 cursor-pointer hover:bg-amber-900 rounded-lg text-slate-900 font-Roboto ' onClick={whatsappRedirect}>Book service</button>
                  
              </div>
             )}
