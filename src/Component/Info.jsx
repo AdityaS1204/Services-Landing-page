@@ -7,7 +7,7 @@ const Info = () => {
   const isInView = useInView(ref, { once: false });
 
   const whatsappRedirect = () => {
-    const phone = "9595843562"
+    const phone = "9730106133"
     const msg = "hey, there i want to know more about this service."
     const encodedUrlComponent = encodeURIComponent(msg);
     const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`
@@ -38,7 +38,7 @@ const Info = () => {
               </tr>
               <tr>
                 <td className='p-2 mr-0.5'>9:00AM - 10:00PM</td>
-                <td className='p-2 mr-0.5'>9:00AM - 10:00PM</td>
+                <td className='p-2 mr-0.5'>9:00AM - 11:00PM</td>
               </tr>
 
             </table>

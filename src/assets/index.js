@@ -1,4 +1,4 @@
-import CTA from "./images/CTA.jpg";
+import CTA from "./images/CTA.png";
 import mark from "./images/logos/3M_wordmark.svg.png";
 import hexis from "./images/logos/hexis.png";
 import avery from "./images/logos/avery.png";
@@ -23,8 +23,6 @@ import review5 from "./images/testimonials/review5.jpg";
 import review5c from "./images/testimonials/review5c.jpg";
 
 
-import backview from './videos/backview.mp4'
-import frontview from './videos/frontview.mp4'
 import bentely from './videos/bentely.mp4'
 
 

@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     
   const whatsappRedirect = () => {
-    const phone = "9595843562"
+    const phone = "9730106133"
     const msg = "hey, there i want to know more about this service."
     const encodedUrlComponent = encodeURIComponent(msg);
     const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`

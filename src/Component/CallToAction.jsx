@@ -9,7 +9,7 @@ const CallToAction = () => {
   
   
   const whatsappRedirect = () => {
-    const phone = "9595843562"
+    const phone = "91 9730106133"
     const msg = "hey, there i want to book my slot for [enter your service]"
     const encodedUrlComponent = encodeURIComponent(msg);
     const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`
@@ -24,7 +24,7 @@ const CallToAction = () => {
     transition={{ duration: 2, ease: 'easeOut',type:'spring', bounce:0.3 }}
     className="h-auto w-11/12">
 
-    <div className='mt-20 flex lg:flex-row flex-col p-8 border border-slate-300 shadow-2xl shadow-amber-100 bg-blue-500 rounded-4xl lg:h-[400px] h-auto w-full justify-between'>
+    <div className='mt-20 flex lg:flex-row flex-col p-8 border border-slate-300 shadow-2xl shadow-amber-300 bg-blue-500 rounded-4xl lg:h-[400px] h-auto w-full justify-between'>
       <div className="flex flex-col lg:w-[50%] w-full">
         {/* text section */}
         <h4 className="text-3xl lg:text-5xl font-Montserrat font-semibold text-neutral-900 mb-9">

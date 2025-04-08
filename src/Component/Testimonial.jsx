@@ -13,7 +13,7 @@ const Testimonial = () => {
     initial={{ opacity: 0.3, y: 60 }}
     animate={isInView ? { opacity: 1, y: 0 } : {}}
     transition={{ duration: 2, ease: 'easeOut',type:'spring', bounce:0.3 }}
-     className='mt-20 p-8 flex flex-col rounded-2xl border bg-neutral-200/30 shadow-lg h-auto w-11/12 border-slate-300'>
+     className='mt-20 p-8 flex flex-col rounded-2xl border bg-neutral-200/30 shadow-xl h-auto w-11/12 border-slate-300'>
       <h3 className='text-3xl lg:text-5xl font-Montserrat font-semibold text-neutral-900'>What our customers say about us</h3>
       <h4 className="font-Roboto italic text-xl mt-6 text-neutral-700">"Real Stories, Real Shine"</h4>
       <p className="font-roboto lg:text-2xl text-xl mt-4 text-neutral-800">Hear from our happy customers who trust MH31 Wash & Detailing Studio for superior car care.</p>
