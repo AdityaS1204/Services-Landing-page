@@ -1,4 +1,4 @@
-import {ceramic,ppf,wash,windowFilm,wrap} from '../assets/index'
+import {ceramic,ppf,wash,windowFilm,wrap,interior,exterior,engine} from '../assets/index'
 import {review1,review1c,review2,review2c,review3,review3c,review4,review4c,review5,review5c} from'../assets/index';
 
 
@@ -42,42 +42,50 @@ export const services = [
     {
       name: "Washing",
       imgsrc:wash,
-      description: "Give your car the ultimate spa treatment with our foam wash & premium hand wash services. We remove dirt, dust, and grime to restore your vehicle’s fresh look while preserving the paint’s shine."
+      description: "Give your car the ultimate spa treatment with our foam wash & premium hand wash services. We remove dirt, dust, and grime to restore your vehicle’s fresh look while preserving the paint’s shine.",
+      pricing:"Staring from just  ₹399"
     },
     {
       name: "Ceramic Coating",
       imgsrc:ceramic,
-      description: "Protect your car with advanced ceramic technology that creates a hydrophobic layer, enhances gloss, and prevents scratches. Say goodbye to water spots and UV damage!"
+      description: "Protect your car with advanced ceramic technology that creates a hydrophobic layer, enhances gloss, and prevents scratches. Say goodbye to water spots and UV damage!",
+      pricing:"Staring from just  ₹14999"
     },
     {
       name: "Paint Protection Film (PPF)",
       imgsrc:ppf,
-      description: "Safeguard your car’s paint with invisible yet powerful protection. PPF shields against scratches, stone chips, and environmental contaminants, keeping your car looking brand new."
+      description: "Safeguard your car’s paint with invisible yet powerful protection. PPF shields against scratches, stone chips, and environmental contaminants, keeping your car looking brand new.",
+      pricing:"Staring from just  ₹65999"
     },
     {
       name: "Wraps",
       imgsrc:wrap,
-      description: "Transform your car with custom vinyl wraps in stunning colors and finishes. Whether it's a matte, gloss, or textured look, we deliver seamless, high-quality wraps for a bold new appearance."
+      description: "Transform your car with custom vinyl wraps in stunning colors and finishes. Whether it's a matte, gloss, or textured look, we deliver seamless, high-quality wraps for a bold new appearance.",
+      pricing:"Staring from just  ₹70999"
     },
     {
       name: "Window Films",
       imgsrc:windowFilm,
-      description: "Upgrade your ride with premium window tinting for UV protection, heat rejection, and privacy. Enjoy a comfortable and stylish driving experience with our high-performance films."
+      description: "Upgrade your ride with premium window tinting for UV protection, heat rejection, and privacy. Enjoy a comfortable and stylish driving experience with our high-performance films.",
+      pricing:"Staring from just  ₹399/sq.ft"
     },
     {
       name: "Engine Deep Cleaning",
-      imgsrc:wrap,
-      description: "Restore engine efficiency and extend its life with deep degreasing and detailing. We remove sludge, grime, and dirt buildup to ensure optimal performance."
+      imgsrc:engine,
+      description: "Restore engine efficiency and extend its life with deep degreasing and detailing. We remove sludge, grime, and dirt buildup to ensure optimal performance.",
+      pricing:"Staring from just  ₹499"
     },
     {
       name: "Exterior Detailing Service",
-      imgsrc:wrap,
-      description: "Revive your car’s paint with our multi-step exterior detailing. From decontamination to polishing and waxing, we enhance shine and remove minor imperfections."
+      imgsrc:exterior,
+      description: "Revive your car’s paint with our multi-step exterior detailing. From decontamination to polishing and waxing, we enhance shine and remove minor imperfections.",
+      pricing:"Staring from just  ₹1299"
     },
     {
       name: "Interior Detailing Service",
-      imgsrc:wrap,
-      description: "Refresh your car’s interior with deep cleaning of seats, dashboard, carpets, and trims. We use high-quality cleaners and protectants to give your car a spotless and fresh feel."
+      imgsrc:interior,
+      description: "Refresh your car’s interior with deep cleaning of seats, dashboard, carpets, and trims. We use high-quality cleaners and protectants to give your car a spotless and fresh feel.",
+      pricing:"Staring from just  ₹999"
     }
   ];
   

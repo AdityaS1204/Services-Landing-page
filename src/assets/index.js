@@ -10,6 +10,10 @@ import ppf from "./images/serviceImage/ppf.jpg";
 import wash from "./images/serviceImage/wash.jpg";
 import windowFilm from "./images/serviceImage/windowFilm.jpg";
 import wrap from "./images/serviceImage/wrap.jpg";
+import engine from './images/serviceImage/engineCleaninig.jpg';
+import interior from './images/serviceImage/interior.jpg';
+import exterior from './images/serviceImage/exterior.jpg';
+
 
 import review1 from "./images/testimonials/review1.jpg";
 import review1c from "./images/testimonials/review1c.jpg";
@@ -39,6 +43,9 @@ export {
   wash,
   windowFilm,
   wrap,
+  engine,
+  interior,
+  exterior,
 
   review1,
   review1c,
@@ -51,7 +58,5 @@ export {
   review5,
   review5c,
   
-  frontview,
-  backview,
   bentely,
 };

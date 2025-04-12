@@ -9,7 +9,7 @@ const CallToAction = () => {
   
   
   const whatsappRedirect = () => {
-    const phone = "91 9730106133"
+    const phone = "+919172534703"
     const msg = "hey, there i want to book my slot for [enter your service]"
     const encodedUrlComponent = encodeURIComponent(msg);
     const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`

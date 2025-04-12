@@ -1,12 +1,19 @@
 import { services } from '../constants/constant';
 import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 
 
 const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
+const [isTouched, setIsTouched] = useState(false)
 
+  const handleTouch = () =>{
+setIsTouched(true)
+setTimeout(() => {
+  setIsTouched(false)
+}, 20000);
+  }
 
 
   return (
@@ -29,9 +36,10 @@ const Services = () => {
           // relative z-40 h-96 w-80 m-6 border-2 p-0 rounded-4xl object-cover
           <div key={index} className="carousel-item relative h-auto w-[200px] lg:w-[300px] hover:cursor-pointer hover:shadow-2xl rounded-4xl ">
             <img src={service.imgsrc} alt={service.name} className='h-full w-full object-cover rounded-4xl' />
-            <div className='absolute flex inset-0 p-8 z-50 text-transparent hover:text-white hover:cursor-pointer flex-col hover:backdrop-blur-xl rounded-4xl duration-700'>
-              <h4 className='font-Montserrat font-semibold text-xl mb-10 mt-6'>{service.name}</h4>
-              <p className='font-Roboto text-sm hover:text-neutral-200 '>{service.description.slice(0, 180)}...</p>
+            <div onTouchStart={handleTouch} className={`absolute flex inset-0 p-8 z-50 text-transparent hover:text-white hover:cursor-pointer flex-col hover:backdrop-blur-xl active:backdrop-blur-xl active:text-white rounded-4xl duration-700 ${isTouched ? 'text-white backdrop-blur-xl':null }`}>
+              <h4 className='font-Montserrat font-semibold lg:text-xl mb-3 mt-2'>{service.name}</h4>
+              <p className='font-Roboto lg:text-sm text-xs hover:text-neutral-200 '>{service.description.slice(0, 180)}...</p>
+              <p className="font-roboto font-bold text-xs lg:text-lg mt-6">{service.pricing}</p>
             </div>
           </div>
         ))}

@@ -7,8 +7,8 @@ const Info = () => {
   const isInView = useInView(ref, { once: false });
 
   const whatsappRedirect = () => {
-    const phone = "9730106133"
-    const msg = "hey, there i want to know more about this service."
+    const phone = "+919172534703"
+    const msg = "hey, there i want to know more about the detailing service."
     const encodedUrlComponent = encodeURIComponent(msg);
     const url = `https://wa.me/${phone}?text=${encodedUrlComponent}`
     window.open(url, "_blank");
