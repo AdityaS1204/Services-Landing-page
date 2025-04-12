@@ -3,7 +3,7 @@ import {CallToAction, Companies, Footer, Hero, Info, Navbar, Services, Testimoni
 
 const App = () => {
   return (
-    <div className="lg:h-[427vh] h-[340vh] w-full flex flex-col items-center bg-neutral-300 text-white">
+    <div className="lg:h-[427vh] h-[355vh] w-full flex flex-col items-center bg-neutral-300 text-white">
       
         <Navbar/>
         <Hero/>
